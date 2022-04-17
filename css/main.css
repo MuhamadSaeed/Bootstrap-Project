@@ -1,0 +1,427 @@
+:root {
+    --blue: #314584;
+    --red: #ff3946;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+}
+/* NAV */
+nav .nav-link  {
+    color: var(--blue) !important;
+}
+nav .dropdown-menu{
+    background-color: var(--blue);
+}
+nav .dropdown-menu .dropdown-item:hover {
+    color: var(--red) !important;
+    background-color: inherit;
+}
+nav .nav-item .nav-link:hover {
+    color: var(--red) !important;
+} 
+nav .lastbtn {
+    color: var(--red);
+    transition: .3s;
+}
+nav .lastbtn:hover {
+    color: var(--red) !important;
+    transform: scale(1.05);
+}
+/* HEADER */
+header img {
+    top: 150px;
+}
+header .info h4 {
+    color: var(--blue);
+    margin-top: 150px;
+    font-size: 70px; 
+}
+header .main {
+    border: 1px solid var(--red);
+    background-color: var(--red);
+}
+header .main:hover {
+    background-color: white !important;
+    color: var(--blue) !important;
+}
+header .master {
+    color: var(--blue);
+}
+header .master:hover {
+    color: var(--red) !important;
+}
+/* ABOUT */
+#about {
+    padding: 150px 0;
+}
+#about .main-cont {
+    gap: 80px;
+}
+#about p, #about h5 {
+    color: var(--blue);
+}
+#about button {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+}
+#about button:hover {
+    background-color: white !important;
+    color: var(--blue) !important;
+}
+#about .card {
+    min-height: 400px;
+    width: 18.5rem;
+    box-shadow: 0px 3px 7px 0px rgb(28 31 33 / 15%);
+    cursor: pointer;
+    transition: .3s;
+}
+#about .card:hover{
+    transform: scale(1.05);
+}
+#about .imgs{
+    z-index: -1;
+}
+#about .imgs .first{
+    left: -12px;
+}
+#about .imgs .second{
+    right: -12px;
+    top: 500px;
+}
+/* ABOUT TWO */
+#about-two img {
+    width: 450px;
+}
+#about-two h6 {
+    color: var(--red);
+}
+#about-two h2, #about-two p {
+    color: var(--blue);
+}
+/* PORTFOLIO */
+#portfolio {
+    padding: 150px 30px;
+}
+#portfolio .aside {
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    top: 235px;
+}
+#portfolio .para{
+    color: var(--blue);
+}
+#portfolio .box {
+    overflow: hidden;
+}
+#portfolio .hid{
+    display: none;
+}
+.over {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: var(--blue);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+.over h5 {
+    text-align: center;
+    margin: 127px 0;
+    color: white;
+}
+#portfolio .box:hover .over {
+    top: 0;
+} 
+#portfolio .show .showbtn{
+    font-size: 20px;
+    transition: .3s;
+    color: var(--red);
+} 
+#portfolio .show .showbtn:hover{
+    color: var(--blue);
+}
+#portfolio .show .less{
+    display: none;
+} 
+/* BLOG */
+#blog .aside {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 270px;
+}
+#blog .info h6  {
+    color: var(--red);
+}
+#blog .info p {
+    color: var(--blue);
+}
+#blog .carousel-inner  {
+    box-shadow: 0px 3px 7px 0px rgb(28 31 33 / 15%);
+    padding: 90px 50px;
+    cursor: pointer;
+    width: 60%;
+}
+#blog .carousel-inner .box h3 {
+    color: var(--blue);
+}
+#blog .carousel-inner .box h6 {
+    color: rgba(0,0,0,.5)!important;
+}
+#blog .carousel-inner .box p{
+    color: var(--blue);
+    line-height: 2;
+    letter-spacing: 2; 
+    font-size: 20px;
+}
+#blog button span {
+    position: relative;
+}
+#blog button span::before {
+    content: "";
+    width: 23px;
+    height: 4px;
+    background: var(--blue);
+    position: absolute;
+    transform: rotate(-30deg);
+    top: 10px;
+    left: 3px;
+}
+#blog button span::after {
+    content: "";
+    width: 23px;
+    height: 4px;
+    background: var(--blue);
+    position: absolute;
+    transform: rotate(30deg);
+    top: 0;
+    left: 3px;
+}
+#blog button span.second::after {
+    top: 18px;
+}
+#blog button span.second::before {
+    top: 8px;
+}
+#blog .carousel-indicators button {
+    background-color: var(--blue);
+}
+#blog .carousel-indicators button:hover {
+    background-color: var(--red);
+}
+/* CONTACT */
+#contact {
+    padding: 150px 80px;
+}
+#contact .info h6{
+    color: var(--red);
+}
+#contact .info h1{
+    color: var(--blue);
+    font-weight: 600;
+}
+#contact .main input,
+#contact .second textarea {
+    width: 100%;
+    height: 60px;
+    background: #f4fafe;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+}
+#contact .second textarea {
+    height: 150px;
+    resize: initial;
+    padding: 15px;
+    margin-top: 20px;
+}
+.content input::placeholder,
+.content textarea::placeholder {
+    color: var(--blue);
+    font-weight: 600;
+}
+#contact button {
+    background-color: var(--red);
+}
+#contact .botton .btn {
+    border: 1px solid var(--red) !important;
+}
+#contact .botton .btn:hover {
+    background-color: white !important;
+    color: var(--blue) !important;
+}
+/* FOOTER */
+footer {
+    background-color: var(--blue);
+    padding: 70px 30px;
+}
+footer .content .info h6{
+    color: white;
+}
+footer .content .info h1{
+    color: var(--red);
+    letter-spacing: 3px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+footer .links li{
+    list-style: none;
+}
+footer .links li:not(:last-child){
+    margin-right: 32px;
+}
+footer .links li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+footer .links li a:hover{
+    color: var(--red);
+}
+footer .lastpara{
+    color: white;
+    margin-bottom: 20px;
+}
+footer .icons ul {
+    padding: 0%;
+}
+footer .icons li{
+    display: inline-block;
+    font-size: 32px;
+}
+footer .icons li a{
+    color: white;
+    transition: .3s;
+}
+footer .icons li a:hover{
+    color: var(--red);
+}
+footer .icons li:not(:last-child){
+    margin-right: 66px;
+}
+/* MEDIA */
+@media (max-width: 991px) {
+    header .container {
+        text-align: center !important;
+    }
+    #about .info {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #about-two .info {
+        text-align: center !important;
+        width: auto  !important;
+    }
+    #about-two .info p {
+        width: 70%;
+    }    
+    #blog .carousel-inner {
+        width: 80%;
+    }
+}
+@media (max-width: 767px) {
+    #blog .carousel-inner {
+        width: 100% !important;
+    }
+    #blog .dir {
+        display: none;
+    }
+    #contact .main {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 576px) {
+    header .info h4 {
+        font-size: 40px ;
+    }
+    #about-two .info p {
+        width: 95%;
+        line-height: 1.6 !important;
+    }
+    #about-two img {
+        width: 300px;
+    }
+    #blog  {
+        padding: 20px !important;
+    }
+    #blog .carousel-inner {
+        padding: 60px 20px;
+    }
+    #blog .carousel-inner .box p {
+        font-size: 14px;
+    }
+    #contact {
+        padding: 150px 20px;
+    }
+}
+@media (max-width: 375px) {
+    header .btns {
+        width: 70%;
+        margin: auto;
+    }
+    footer .links{
+        display: block !important;
+    }
+    footer .links li {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+    footer .icons li{
+        display: inherit;
+    }
+    footer .icons li {
+        margin-right: 0 !important;
+    }
+    /* the header animate */
+    .animate {
+        position: relative;
+    }
+    .animate span{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: #f4fafe;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        animation-name: animate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        display: block;
+    }
+}
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    25% {
+        transform: translate(-50%, -25%);
+    }
+    50% {
+        transform: translate(-50%, 0%);
+    }
+    75% {
+        transform: translate(-50%, 25%);
+    }
+    100% {
+        transform: translate(-50%, 50%);
+    }
+}
